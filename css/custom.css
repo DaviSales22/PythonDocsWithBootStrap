@@ -1,0 +1,6 @@
+:root {
+    --primary: hsla(44, 100%, 64%, 0.686);
+    --secondary: rgb(84, 143, 207, 0.686);
+    --tertiary: #c4c4c4;
+    --tertiary-active: #bebebe;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Python: Instalar no Windows</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="/img/python-logo.png">
+</head>
+
+<body>
+
+    <div class="btn position-fixed d-flex justify-content-center align-self-center">
+        <span class="fas text-white fa-bars flex"></span>
+    </div>
+
+
+    <nav class="sidebar">
+        <div class="text">Python Docs</div>
+        <ul>
+            <li class="active"><a href="index.html">Página Inicial</a></li>
+            <li>
+                <a href="#" class="feat-btn">Instalando
+            <span class="fas fa-caret-down first"></span>
+          </a>
+                <ul class="feat-show">
+                    <li><a href="install-py-win.html">Windows</a></li>
+                    <li><a href="install-py-li.html">Linux</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="serv-btn">Comandos Básicos
+            <span class="fas fa-caret-down second"></span>
+          </a>
+                <ul class="serv-show">
+                    <li><a href="#">Desenvolvendo</a></li>
+                    <li><a href="#">Desenvolvendo</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container python-sob text-center justify-content-center d-flex flex-column ">
+
+        <p>
+            <span>Instalando o Python no Windows</span>A instalação do Python no Windows 10 é uma das mais simples que já vi. Para instalar o Python mais atualizado no Windows, primeiro você precisa acessar a página de download do <a href="https://www.python.org/downloads/">Python</a>
+        </p>
+        <div class="row d-flex justify-content-center">
+            <img class="mb-5" src="/img/python-t.png" alt="">
+            <p>
+                Faça o download do instalador executável do Windows (32 ou 64 bits) e clique duas vezes nele para iniciar o assistente de instalação do python, como mostrado abaixo.
+            </p> <img class="mb-5" src="/img/python-t2.png" alt="">
+            <p>O processo de instalação é bem simples. <br> 1. Marque a opção "Add Python to PATH" <br>2. Clique em "Install Now" A tela abaixo será mostrada.<br> Aguarde enquanto o instalador completa o processo de instalação.</p>
+            <img class="mb-5" src="/img/python-t3.png" alt="">
+            <p>
+                Para verificar se a instalação do Python foi bem-sucedida, pesquise no menu iniciar por "cmd" e clique duas vezes para abri-lo.
+
+            </p>
+            <img class="mb-5" src="/img/python-t4.png" alt="">
+            <p>Digite o seguinte comando: <code> python --version</code> Este comando retornará a versão do python que está instalada em sua máquina.</p>
+            <img class="mb-5" src="/img/python-t5.png" alt="">
+
+            <h3 class="mt-5">Okay! Agora está tudo pronto</h3>
+        </div>
+    </div>
+
+    <script>
+        $('.btn').click(function() {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function() {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function() {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

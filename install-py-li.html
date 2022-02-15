@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Python: Instalar no Linux</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="/img/python-logo.png">
+</head>
+
+<body>
+    <div class="btn position-fixed d-flex justify-content-center align-self-center">
+        <span class="fas text-white fa-bars flex"></span>
+    </div>
+
+
+    <nav class="sidebar">
+        <div class="text">Python Docs</div>
+        <ul>
+            <li class="active"><a href="index.html">Página Inicial</a></li>
+            <li>
+                <a href="#" class="feat-btn">Instalando
+            <span class="fas fa-caret-down first"></span>
+          </a>
+                <ul class="feat-show">
+                    <li><a href="install-py-win.html">Windows</a></li>
+                    <li><a href="#">Linux</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="serv-btn">Comandos Básicos
+            <span class="fas fa-caret-down second"></span>
+          </a>
+                <ul class="serv-show">
+                    <li><a href="#">Desenvolvendo</a></li>
+                    <li><a href="#">Desenvolvendo</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="container python-sob text-center justify-content-center d-flex ">
+
+        <p>
+            <span>
+            Instalando o Python no Linux </span>Verifique se já tem o Python instalado, se você usa GNU/Linux, provavelmente já possui alguma versão do Python instalada por padrão. Para conferir, digite em um terminal:
+        </p>
+        <code>$ which python</code>
+        <p class="or">ou</p>
+        <code>$ which python3</code>
+
+        <p class="mt-5">que deve retornar algo como <code>/usr/bin/python</code>. Isso significa que o Python está instalado nesse endereço. Caso contrário, se retornar algo como which: no python in <code>(/usr/local/sbin:/usr/local/bin:/usr/bin:/usr...)</code>você precisa
+            instalar pelos repositórios ou gerenciador de pacotes de sua distribuição.</p>
+
+        <p class="mt-5"><span>Instalação por Gerenciadores de Pacotes</span> Os gerenciadores de pacotes mais comuns são apt-get (Debian, Ubuntu) e yum (RedHat, CentOS). Caso sua distribuição utilize um gerenciador de pacotes diferente, acesse a página de downloads do
+            Python.
+        </p>
+
+        <p><span class="mt-5">Apt-get</span>Para instalar o Python 3, digite em um terminal:</p><code>$ sudo apt-get install python3</code>
+
+        <p class="opcional">(Opcional) Para instalar o gerenciador de pacotes pip, digite em um terminal:</p>
+        <code class="opcional2">$ sudo apt-get install python3-pip</code>
+
+        <p class="mt-5"><span>Yum</span>Para instalar o Python 3, digite em um terminal:</p>
+        <code>$ sudo yum install python3</code>
+
+        <p class="opcional">(Opcional) Para instalar o gerenciador de pacotes pip, digite em um terminal:</p>
+        <code class="opcional2">$ yum -y install python3-pip</code>
+
+    </div>
+
+    <script>
+        $('.btn').click(function() {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function() {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function() {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
